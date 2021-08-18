@@ -5,7 +5,7 @@ class ApplicationKtTest {
 
     @Test
     fun main() {
-        val result = main(arrayOf("./src/test/resource/input.txt", "6"))
+        val result = countTermFrequency("./src/test/resource/input.txt", 6)!!
         assertTrue { result.size == 6 }
         assertTrue(result.get(0).first == "live")
         assertTrue(result.get(0).second == 2)
